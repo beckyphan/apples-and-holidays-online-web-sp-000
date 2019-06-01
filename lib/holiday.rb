@@ -99,10 +99,9 @@ def all_supplies_in_holidays(holiday_hash)
         end
       end
       
+      cap_supply = []
       supply_array.each do |supply|
-        supply.each do |word|
-          word.capitalize!
-        end
+        cap_supply << supply
         binding.pry
       end
       
