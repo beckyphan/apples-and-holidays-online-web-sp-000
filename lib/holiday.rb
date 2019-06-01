@@ -92,7 +92,7 @@ def all_supplies_in_holidays(holiday_hash)
       cap_holiday_arr = []
       cap_holiday_string = ""
       holiday_arr << holiday.to_s
-      cap_holiday_string << holiday_arr.split('_')
+      cap_holiday_string << holiday_arr.split(/_/)
       cap_holiday_string.each do |word|
         cap_holiday_arr << word.capitalize!
       end
