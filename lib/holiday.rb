@@ -88,11 +88,20 @@ def all_supplies_in_holidays(holiday_hash)
     day_hash.each do |holiday, supply_array|
       holiday_cap = ""
       holiday_arr = holiday.to_s.split('_')
+      
       if holiday_arr.length > 1
         holiday_arr.each do |word|
           holiday_cap = holiday_cap.strip + " #{word.capitalize!}"
-          binding.pry
+        end
+      else
+        holiday_cap = "#{word.capitalize!}"
       end
+      
+      puts "  #{holiday_cap}:"
+      
+      if supply_array.length > 1 
+        supply_array.each do |supply|
+          print supply.capitalize!
     end
   end
 end
