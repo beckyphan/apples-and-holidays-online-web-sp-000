@@ -101,7 +101,7 @@ def all_supplies_in_holidays(holiday_hash)
       
       if supply_array.length > 1 
         supply_array.each do |supply|
-          print supply.capitalize!
+          
     end
   end
 end
