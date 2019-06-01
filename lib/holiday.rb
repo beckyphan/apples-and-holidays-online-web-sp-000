@@ -99,12 +99,11 @@ def all_supplies_in_holidays(holiday_hash)
         end
       end
       
-      supply_cap = ""
       supply_array.each do |supply|
-        if supply.include?(" ")
-          supply_cap = supply.split(" ")
-          supply_cap.each do |word|
-            word.capitalize!
+        supply.each do |word|
+          word.capitalize!
+        end
+        binding.pry
       end
       
       puts "  #{holiday_cap}: #{supply_array.join(', ')}"
