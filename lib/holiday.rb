@@ -103,7 +103,7 @@ def all_supplies_in_holidays(holiday_hash)
         supply.capitalize!
       end
       
-      puts "  #{holiday_cap}: #{supply_array.join(',')}"
+      puts "  #{holiday_cap}: #{supply_array.join(', ')}"
     end
   end
 end
