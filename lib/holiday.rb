@@ -102,7 +102,6 @@ def all_supplies_in_holidays(holiday_hash)
       cap_supply = []
       supply_array.each do |supply|
         cap_supply << supply
-        binding.pry
       end
       
       puts "  #{holiday_cap}: #{supply_array.join(', ')}"
