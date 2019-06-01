@@ -94,6 +94,9 @@ def all_supplies_in_holidays(holiday_hash)
           holiday_cap = holiday_cap.strip + " #{word.capitalize!}"
         end
       else
+        holiday_arr.each do |word|
+          holiday_cap = holiday_cap.strip + " #{word.capitalize!}"
+        end
         holiday_cap = "#{word.capitalize!}"
       end
       
