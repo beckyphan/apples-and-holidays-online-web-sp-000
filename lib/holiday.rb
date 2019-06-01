@@ -97,11 +97,12 @@ def all_supplies_in_holidays(holiday_hash)
         holiday_cap = "#{word.capitalize!}"
       end
       
-      puts "  #{holiday_cap}:"
+      supply_array.each do |supply|
+        supply.capitalize!
+      end
       
-      if supply_array.length > 1 
-        supply_array.each do |supply|
-          
+      puts "  #{holiday_cap}: #{supply_array.flatten}
+      
     end
   end
 end
