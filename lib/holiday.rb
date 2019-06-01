@@ -91,6 +91,7 @@ def all_supplies_in_holidays(holiday_hash)
       holiday_arr.each do |word|
         holiday_cap = holiday_cap + " #{word.capitalize!}"
         binding.pry
+      end
     end
   end
 end
